@@ -6,10 +6,7 @@ pipeline {
             steps {
                 git branch: "main", credentialsId: "github", poll: false, url: """https://github.com/dattrinht/jenkins-template-engine.git"""
                 sh "ls -la"
-                sh "cd.."
-                sh "ls -la"
-                sh "cd.."
-                sh "ls -la"
+                sh "pwd"
             }
         }
 
