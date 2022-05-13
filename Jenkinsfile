@@ -6,16 +6,18 @@ pipeline {
   }
 
     stages {
+        stage('Git') {
+            steps {
+                echo 'Pulling..'
+            }
+        }
+
         stage('Build') {
             steps {
-                echo 'Building.. ${STATEMENT}'
+                echo 'Building.. ${params.STATEMENT}'
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
+        
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
