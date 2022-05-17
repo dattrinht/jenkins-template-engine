@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Git') {
             steps {
-                pull_code()
+                pull_code name: 'git'
 
                 script {
                     for (program_name in env.build_program_names.split(", ")) {
