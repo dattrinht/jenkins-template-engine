@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage {
+        stage('') {
             steps {
                 pull_code git_repositories: env.git_repositories
 
