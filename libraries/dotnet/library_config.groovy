@@ -1,5 +1,5 @@
 fields{
     required {
-        services = String
+        services
     }
 }
