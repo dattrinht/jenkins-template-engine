@@ -7,7 +7,7 @@ pipeline {
                 pull_code git_repositories: env.git_repositories
 
                 script {
-                    def abuildCommandSupervisor = command_builder.buildCommandSupervisor OBJECT_S3: OBJECT_S3, SERVICE_NAME: SERVICE_NAME
+                    def abuildCommandSupervisor = command_builder.buildCommandSupervisor("OBJECT_S3", "SERVICE_NAME")
                     println "${buildCommandSupervisor}"
                     // def buildCommandDeploy = command_builder.buildCommandDeploy OBJECT_S3: OBJECT_S3, SERVICE_NAME: SERVICE_NAME
                     // println "${buildCommandDeploy}"

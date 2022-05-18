@@ -1,7 +1,7 @@
-def buildCommandSupervisor(Map config) {
+def buildCommandSupervisor(String OBJECT_S3, String SERVICE_NAME) {
     def command = """
             mkdir -p /etc/supervisor/conf.d/
-            aws s3 cp --only-show-errors ${config.OBJECT_S3} /etc/supervisor/conf.d/${config.SERVICE_NAME}.conf
+            aws s3 cp --only-show-errors ${OBJECT_S3} /etc/supervisor/conf.d/${SERVICE_NAME}.conf
         """
     return command
 }
