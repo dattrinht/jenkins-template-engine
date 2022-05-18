@@ -11,6 +11,6 @@ application_environments{
     }
     production {
         deploy_server_instances = [ "server-name : 0.0.0.0" ]
-        git_repositories = [ "lheditorialapi: master", "lighthousebasement: master" ]
+        git_repositories = [ "lheditorialapi": "master", "lighthousebasement": "master" ]
     }
 }
