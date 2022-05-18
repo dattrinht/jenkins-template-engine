@@ -1,7 +1,7 @@
 void call(Map config){
     stage("Build ${config.program_name}"){
         script {
-            def supervisorCommand = command_buider.buildCommandSupervisor(config.program_name, "aaa")
+            def supervisorCommand = command_builder.buildCommandSupervisor(config.program_name, "aaa")
             echo "${supervisorCommand}"
 
             echo """dotnet restore --verbosity quiet ${config.build_csproj_file_name}"""
