@@ -1,7 +1,18 @@
 libraries {
     git
-    dotnet
     utilities
+    dotnet {
+        services = [
+            [
+                "service_name": "aa",
+                "suporvisor_command": "bb"
+            ],
+            [
+                "service_name": "aa",
+                "suporvisor_command": "bb"
+            ]
+        ]
+    }
 }
 
 application_environments{
