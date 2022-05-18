@@ -3,6 +3,5 @@ String base_file_by_time() {
 }
 
 String s3_dir_location() {
-    def base_file = base_file_by_time()
-    return """s3://cf-sandbox-jenkins-temp/$JOB_NAME/${base_file}/"""
+    return """s3://cf-sandbox-jenkins-temp/$JOB_NAME/${base_file_by_time()}/"""
 }
