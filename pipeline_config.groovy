@@ -2,16 +2,7 @@ libraries {
     git
     utilities
     dotnet {
-        services = [
-            [
-                "service_name": "aa",
-                "suporvisor_command": "bb"
-            ],
-            [
-                "service_name": "aa",
-                "suporvisor_command": "bb"
-            ]
-        ]
+        services = "aaaaa"
     }
 }
 
