@@ -1,7 +1,7 @@
 void call(){
-    stage("Build ${config.services}"){
+    stage("Build ${config.services["service_name"]}"){
         script {
-            echo """${config.services}"""
+            echo """${config.services["service_name"]}"""
         }
     }
 }
