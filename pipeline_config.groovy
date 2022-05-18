@@ -1,6 +1,7 @@
 libraries {
     git
     dotnet
+    utilities
 }
 
 application_environments{
