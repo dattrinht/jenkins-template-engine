@@ -1,4 +1,4 @@
-void call(Map config){
+void call(){
     config.services.each() { service ->
         stage("Build ${service["service_name"]}"){
             script {
