@@ -1,4 +1,4 @@
-void call(app_env){
+void call(app_env, Map config){
     stage("Deploy ${config.program_name}") {
         app_env.deploy_server_instances.each { entry -> 
             def instance = entry.split(" : ")
