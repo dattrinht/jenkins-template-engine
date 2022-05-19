@@ -1,4 +1,4 @@
-void call(app_env){
+void call(){
     stage("Build ${config.service_name}"){
         script {
             echo "${utility.s3_dir_location()}"

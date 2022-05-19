@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     git.check_out staging
-                    build staging
+                    build()
                     deploy staging
                 }
             }
