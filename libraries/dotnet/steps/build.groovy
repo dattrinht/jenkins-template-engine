@@ -1,3 +1,5 @@
+import src.app_static
+
 void call(){
     stage("Build ${config.service_name}"){
         script {

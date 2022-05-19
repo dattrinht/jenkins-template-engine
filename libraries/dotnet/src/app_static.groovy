@@ -1,3 +1,5 @@
+package src
+
 public static class app_static {
     public static String base_file_by_time() {
         return """${new Date().format('yyMMddHHmmss', TimeZone.getTimeZone('UTC'))}"""
