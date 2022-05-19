@@ -1,6 +1,6 @@
-package src
+package example
 
-class app_static {
+class Utility {
     String base_file_by_time() {
         return """${new Date().format('yyMMddHHmmss', TimeZone.getTimeZone('UTC'))}"""
     }
