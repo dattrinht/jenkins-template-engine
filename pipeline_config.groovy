@@ -1,10 +1,10 @@
 libraries {
     git
-    utilities
     dotnet {
-        services = [
-            "service_name": "aaaa"
-        ]
+        service_name = "Editorial-API"
+        service_port = 11001
+        csproj_file_path = "lheditorialapi/Services/Editorial/Editorial.API/Editorial.API.csproj"
+        supervisor_command = "dotnet Lighthouse.Services.Editorial.API.dll"
     }
 }
 
