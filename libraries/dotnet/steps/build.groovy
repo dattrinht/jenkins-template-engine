@@ -1,4 +1,4 @@
-import src.app_static
+import libraries.dotnet.src
 
 void call(){
     stage("Build ${config.service_name}"){
