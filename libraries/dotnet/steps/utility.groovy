@@ -1,3 +1,11 @@
+String base_file_by_time() {
+    return """${new Date().format('yyMMddHHmmss', TimeZone.getTimeZone('UTC'))}"""
+}
+
+String s3_dir_location() {
+    return """s3://cf-sandbox-jenkins-temp/$JOB_NAME/${base_file_by_time()}/"""
+}
+
 String buildCommandSupervisor(String OBJECT_S3, String SERVICE_NAME) {
     def command = """
             mkdir -p /etc/supervisor/conf.d/
