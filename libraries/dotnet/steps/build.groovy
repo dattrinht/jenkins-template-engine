@@ -3,6 +3,11 @@ void call(){
         script {
             echo "${utility.s3_dir_location()}"
             echo """${config.timestamp}"""
+            echo """${config.timestamp}"""
+            echo """${config.timestamp}"""
+            echo """${config.timestamp}"""
+            echo """${config.timestamp}"""
+            echo """${config.timestamp}"""
         }
     }
 }
