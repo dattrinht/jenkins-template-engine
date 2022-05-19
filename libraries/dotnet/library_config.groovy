@@ -4,6 +4,6 @@ fields{
         service_port = int
         csproj_file_path = String
         supervisor_command = String
-        timestamp = String
+        timestamp = Number
     }
 }
