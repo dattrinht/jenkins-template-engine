@@ -1,7 +1,3 @@
-jte {
-    pipeline_template = "Template.Jenkinsfile"
-}
-
 libraries {
     git
     dotnet {
@@ -9,7 +5,7 @@ libraries {
         service_port = 11001
         csproj_file_path = "lheditorialapi/Services/Editorial/Editorial.API/Editorial.API.csproj"
         supervisor_command = "dotnet Lighthouse.Services.Editorial.API.dll"
-        timestamp = """${new Date().format('yyMMddHHmmss', TimeZone.getTimeZone('UTC'))}"""
+        timestamp = new Date().format('yyMMddHHmmss', TimeZone.getTimeZone('UTC'))
     }
 }
 
