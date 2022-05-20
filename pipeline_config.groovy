@@ -1,5 +1,5 @@
 libraries {
-    git
+    git2
     dotnet {
         service_name = "Editorial-API"
         service_port = 11001
