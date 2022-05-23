@@ -1,5 +1,5 @@
 void call(){
-    stage("dotnet_deploy"){
+    stage(""){
         script {
             if (config.suporvisor != null) {
                 suporvisor()
