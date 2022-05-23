@@ -4,8 +4,9 @@ void call(){
             if (config.nginx == null) {
                 return;
             }
-            
-            echo """${config.nginx.command}"""
+
+            echo """command: ${config.nginx.command}"""
+            echo """service_name: ${config.nginx.service_name}"""
         }
     }
 }

@@ -5,7 +5,8 @@ void call(){
                 return;
             }
 
-            echo """${config.suporvisor.command}"""
+            echo """command: ${config.suporvisor.command}"""
+            echo """service_name: ${config.suporvisor.service_name}"""
         }
     }
 }

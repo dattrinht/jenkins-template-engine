@@ -5,7 +5,8 @@ void call(){
                 return;
             }
 
-            echo """${config.crontab.command}"""
+            echo """command: ${config.crontab.command}"""
+            echo """service_name: ${config.crontab.service_name}"""
         }
     }
 }

@@ -5,7 +5,8 @@ void call(){
                 return;
             }
 
-            echo """${config.aws_gateway.command}"""
+            echo """command: ${config.aws_gateway.command}"""
+            echo """service_name: ${config.aws_gateway.service_name}"""
         }
     }
 }

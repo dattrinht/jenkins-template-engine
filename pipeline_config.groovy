@@ -1,12 +1,12 @@
-def command = "dotnet deploy"
-
 libraries {
     dotnet_deploy {
         nginx {
-            command = command
+            command = "deploy nginx"
+            service_name = "API"
         }
         aws_gateway {
-            command = "command"
+            command = "deploy aws_gateway"
+            service_name = "API"
         }
     }
 }
