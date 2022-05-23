@@ -1,3 +1,6 @@
+
+def service_name = "API from def"
+
 libraries {
     dotnet_deploy {
         nginx {
@@ -10,8 +13,6 @@ libraries {
         }
     }
 }
-
-def service_name = "API from def"
 
 application_environments{
     staging {
