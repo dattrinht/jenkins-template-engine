@@ -5,9 +5,7 @@ pipeline {
         stage("Preparation") {
             steps {
                 script {
-                    git.check_out staging
-                    build()
-                    deploy staging
+                    deploy()
                 }
             }
         }

@@ -1,11 +1,11 @@
 libraries {
-    git2
-    dotnet {
-        service_name = "Editorial-API"
-        service_port = 11001
-        csproj_file_path = "lheditorialapi/Services/Editorial/Editorial.API/Editorial.API.csproj"
-        supervisor_command = "dotnet Lighthouse.Services.Editorial.API.dll"
-        timestamp = new Date().format('yyMMddHHmmss', TimeZone.getTimeZone('UTC'))
+    dotnet_deploy {
+        nginx {
+            command = "nginx deploy"
+        }
+        suporvisor {
+            command = "suporvisor deploy"
+        }
     }
 }
 
