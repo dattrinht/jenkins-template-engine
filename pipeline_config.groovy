@@ -6,10 +6,12 @@ libraries {
         }
         aws_gateway {
             command = "deploy aws_gateway"
-            service_name = "API"
+            service_name = service_name
         }
     }
 }
+
+def service_name = "API from def"
 
 application_environments{
     staging {
