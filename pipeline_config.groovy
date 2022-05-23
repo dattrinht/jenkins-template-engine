@@ -3,9 +3,7 @@ libraries {
         nginx {
             command = "nginx deploy"
         }
-        aws_gateway {
-            command = "aws_gateway deploy"
-        }
+        aws_gateway { }
     }
 }
 
