@@ -1,21 +1,19 @@
 void call(){
-    stage(""){
-        script {
-            if (config.suporvisor != null) {
-                suporvisor()
-            }
+    script {
+        if (config.suporvisor != null) {
+            suporvisor()
+        }
 
-            if (config.nginx != null) {
-                nginx()
-            }
+        if (config.nginx != null) {
+            nginx()
+        }
 
-            if (config.crontab != null) {
-                crontab()
-            }
+        if (config.crontab != null) {
+            crontab()
+        }
 
-            if (config.aws_gateway != null) {
-                aws_gateway()
-            }
+        if (config.aws_gateway != null) {
+            aws_gateway()
         }
     }
 }
