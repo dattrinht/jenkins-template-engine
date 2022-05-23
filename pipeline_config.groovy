@@ -6,7 +6,7 @@ libraries {
             command = command
         }
         aws_gateway {
-            command = command
+            command = "command"
         }
     }
 }
