@@ -1,5 +1,5 @@
 
-def service_name = "API from def"
+def service_name_var = "API from def"
 
 libraries {
     dotnet_deploy {
@@ -9,7 +9,7 @@ libraries {
         }
         aws_gateway {
             command = "deploy aws_gateway"
-            service_name = service_name
+            service_name = service_name_var
         }
     }
 }
