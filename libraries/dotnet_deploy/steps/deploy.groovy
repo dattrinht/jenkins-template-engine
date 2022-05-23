@@ -1,8 +1,10 @@
 void call(){
     stage("dotnet_deploy"){
         script {
-            nginx()
             suporvisor()
+            nginx()
+            crontab()
+            aws_gateway()
         }
     }
 }

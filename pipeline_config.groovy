@@ -3,8 +3,8 @@ libraries {
         nginx {
             command = "nginx deploy"
         }
-        suporvisor {
-            command = "suporvisor deploy"
+        aws_gateway {
+            command = "aws_gateway deploy"
         }
     }
 }
