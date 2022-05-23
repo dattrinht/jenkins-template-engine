@@ -1,10 +1,12 @@
+def command = "dotnet deploy"
+
 libraries {
     dotnet_deploy {
         nginx {
-            command = "nginx deploy"
+            command = command
         }
         aws_gateway {
-            command = "aws_gateway deploy"
+            command = command
         }
     }
 }
