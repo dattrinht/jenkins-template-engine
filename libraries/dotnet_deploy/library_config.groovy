@@ -1,5 +1,5 @@
 fields {
-  required {
+  optional {
     suporvisor {
       command = String
     }
