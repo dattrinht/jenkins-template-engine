@@ -1,16 +1,12 @@
 libraries {
     dotnet_deploy {
         nginx {
-            command = keywords.command
+            command = "nginx deploy"
         }
-        aws_gateway { 
-            command = keywords.command
+        aws_gateway {
+            command = "aws_gateway deploy"
         }
     }
-}
-
-keywords {
-    command = "deploy"
 }
 
 application_environments{
