@@ -1,6 +1,3 @@
-
-def service_name_var = "API from def"
-
 libraries {
     git
 }
