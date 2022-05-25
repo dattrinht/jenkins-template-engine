@@ -2,16 +2,7 @@
 def service_name_var = "API from def"
 
 libraries {
-    dotnet_deploy {
-        nginx {
-            command = "deploy nginx"
-            service_name = "API"
-        }
-        aws_gateway {
-            command = "deploy aws_gateway"
-            service_name = service_name_var
-        }
-    }
+    git
 }
 
 application_environments{
